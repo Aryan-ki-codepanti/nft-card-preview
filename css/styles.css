@@ -13,10 +13,106 @@
 
     /* ### Neutral */
 
-    --Very-dark-blue: hsl(217, 54%, 11%);
-    --Very-dark-blue: hsl(216, 50%, 16%);
-    --Very-dark-blue: hsl(215, 32%, 27%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
+}
+
+body , footer{
+    background: var(--Very-dark-blue-main);
+}
+
+/* Main */
+
+main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* Wrapper */
+.card-wrapper{
+    width: 362px;
+    background: var(--Very-dark-blue-card);
+    padding: 1.5em 1.5em 2em;
+    border-radius: 1rem;
+}
+
+/* Image */
+.image-box{
+    display: grid;
+    place-items: center;
+}
+.image-box img{
+    width: 300px;
+    border-radius: 0.5rem;
+}
+
+/* Card Body */
+.card-body h1{
+    color: var(--White);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-block: 1em;
+}
+.card-body p{
+    color: var(--Soft-blue);
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 1.7em;
+}
+.flex p{
+    display: inline-block;
+}
+
+.flex div{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.flex img{
+    height: 1.125rem;
+}
+
+.ethereum p{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+.time-left p{
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+/* Card Footer */
+
+.card-footer{
+    border-top: 1px solid var(--Very-dark-blue-line);
+    padding-top: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.card-footer p{
+    font-size: 1.125rem;
+    color: var(--Soft-blue);
+}
+
+.card-footer span{
+    color: var(--White);
+}
+
+.avatar{
+    width: 35px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
 }
 
 /* Attribution */

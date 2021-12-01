@@ -171,3 +171,17 @@ footer{
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+
+/* Media */
+@media screen and (max-height: 670px) {
+    main{
+        padding-top: 2em;
+    }
+    footer{
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-block: 2em 0.5em;
+    }
+}
